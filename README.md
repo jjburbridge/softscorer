@@ -1,0 +1,2 @@
+# softscorer
+Softball scoring pwa 
