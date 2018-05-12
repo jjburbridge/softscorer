@@ -5,6 +5,8 @@ import Score from '@/components/Score'
 import Batter from '@/components/Batter'
 import StrikeOut from '@/components/StrikeOut'
 import Walk from '@/components/Walk'
+import LineUp from '@/components/LineUp'
+import AddBatter from '@/components/AddBatter'
 
 Vue.use(Router)
 
@@ -14,6 +16,16 @@ export default new Router({
       path: '/',
       name: 'scoreboard',
       component: Scoreboard
+    },
+    {
+      path: '/roster',
+      name: 'roster',
+      component: LineUp
+    },
+    {
+      path: '/roster/add-batter',
+      name: 'addBatter',
+      component: AddBatter
     },
     {
       path: '/score/:id?',

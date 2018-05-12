@@ -3,6 +3,7 @@
       <div v-for="batter in this.batters" v-bind:key=batter.index class="image-card" @click="batterDetails(batter.id)">
           <div class="image-card__picture">
             <p>{{ batter.name }}</p>
+            <p>{{ $store.state.count }}</p>
           </div>
       </div>
     </div>
